@@ -1,0 +1,49 @@
+生命周期：
+  1、beforeCreate  实例创建之前
+  2、create  创建完成
+  3、beforeMount   实例挂载之前
+  4、mount  实例挂载后
+  5、beforeUpdate  实例更新之前
+  5、 update   实例更新之后
+     beforeDestory  实例销毁之前
+     Destory    实例销毁之后
+
+     自定义指令
+     vue.directive("指令名称",{
+         bind(){}
+         insertec(){}
+         unbind(){}
+         update(){}
+         componentUpdate(){}
+     })
+
+
+     动画
+     transtion    <transtion name="fade">  <transtion/> 
+     函数绑定
+           beforeEnter()
+           enter()
+           afterEnter()
+    路由守卫
+        全局前置路由守卫
+            router.beforeEach()
+        全局后置置路由守卫
+            router.afterEach()
+
+    vuex   状态管理
+       mutation    触发state值的改变
+       getters   实时计算
+       actions   异步分发mutation
+       moudle     模块
+
+
+git   代码管理工具  svn（小公司还在用）   码云（git+svn 结合体（小乌龟））
+  本地区 暂存区   远程区（服务区）
+  git  init
+  git status 
+  git add .
+  git commit -m""
+  git config --golbal user.email
+  git remote add origin
+  git push -u origin master
+  git branch  查看分支
